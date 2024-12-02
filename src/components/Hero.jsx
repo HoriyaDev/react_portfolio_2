@@ -1,6 +1,7 @@
-// import content
 import { useEffect } from "react";
 import { content } from "../Content";
+import Typewriter from "typewriter-effect";
+
 const Hero = () => {
   const { hero } = content;
 
@@ -18,38 +19,45 @@ const Hero = () => {
           </h1>
         </div>
 
-        {/* first col */}
+        {/* First Column */}
         <div className="pb-16 px-6 pt-5" data-aos="fade-down">
           <h2>{hero.title}</h2>
           <br />
-          <div className="flex justify-end">
-            <button className="btn">{hero.btnText}</button>
+
+          {/* Typewriter Effect */}
+          <div className="text-lg font-semibold text-gray-700">
+            <div className="text-2xl md:text-4xl font-bold ">
+              <Typewriter
+                options={{
+                  strings: [
+                    "I am a Front-End Developer.",
+                    "I build interactive user interfaces.",
+                    "I bring designs to life.",
+                    "I love crafting responsive websites.",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 75,
+                  deleteSpeed: 50,
+                }}
+              />
+            </div>
           </div>
-          <div className="flex flex-col gap-10 mt-10">
-            {hero.hero_content.map((content, i) => (
-              <div
-                key={i}
-                data-aos="fade-down"
-                data-aos-delay={i * 300}
-                className={`flex items-center w-80 gap-5
-            ${i === 1 && " flex-row-reverse text-right"}  `}
-              >
-                <h3>{content.count}</h3>
-                <p>{content.text}</p>
-              </div>
-            ))}
+
+          <div className="flex justify-end mt-10">
+            <button className="btn">{hero.btnText}</button>
           </div>
         </div>
 
-        {/* sec col */}
-        <div className="md:h-[37rem] h-96">
+        {/* Second Column */}
+        {/* <div className="md:h-[37rem] h-96">
           <img
             src={hero.image}
             data-aos="slide-up"
             alt="..."
             className="h-full object-cover"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
