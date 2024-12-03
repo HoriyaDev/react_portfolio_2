@@ -1,11 +1,11 @@
 // import images
 import Hero_person from "./assets/images/Hero/person.png";
-
-import figma from "./assets/images/Skills/figma.png";
-import sketch from "./assets/images/Skills/sketch.png";
-import ps from "./assets/images/Skills/ps.png";
+import html from "./assets/images/Skills/html.webp"
+import java from "./assets/images/Skills/java.webp"
+import responsive from "./assets/images/Skills/responsive.jpg";
+import github from "./assets/images/Skills/github.png";
 import reactjs from "./assets/images/Skills/react.png";
-import nodejs from "./assets/images/Skills/node.png";
+import tailwind from "./assets/images/Skills/tailwind.png";
 import python from "./assets/images/Skills/python.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
@@ -65,13 +65,10 @@ export const content = {
     image: Hero_person,
     hero_content: [
       {
-        count: "8+",
-        text: "Years of Experinse in Web development",
+        
+        text: "I’m a front-end developer creating responsive, user-friendly interfaces that deliver seamless and engaging digital experiences.",
       },
-      {
-        count: "20+",
-        text: "Projects Worked in my career",
-      },
+      
     ],
   },
   skills: {
@@ -79,38 +76,81 @@ export const content = {
     subtitle: "MY TOP SKILLS",
     skills_content: [
       {
-        name: "Figma",
-        para: "Lorem ipsum text  dummy",
-        logo: figma,
+        name: "HTML & CSS",
+        para: "Proficiency in creating structured, well-styled, and responsive layouts.",
+        logo: html,
+        description: [
+          "Building semantic and accessible HTML structures.",
+          "Crafting visually appealing designs with modern CSS techniques.",
+          "Implementing responsive layouts with media queries and CSS Grid/Flexbox.",
+          "Creating reusable and maintainable stylesheets with BEM methodology.",
+          "Using animations and transitions for interactive user experiences.",
+        ],
       },
       {
-        name: "Node js",
-        para: "Lorem ipsum text  dummy",
-        logo: nodejs,
-      },
-      {
-        name: "Adobe Photoshop",
-        para: "Lorem ipsum text  dummy",
-        logo: ps,
+        name: "JavaScript",
+        para: "Expertise in adding interactivity and dynamic functionality to web pages.",
+        logo: java,
+        description: [
+          "Manipulating the DOM dynamically to create interactive elements.",
+          "Writing clean, modular, and reusable JavaScript functions.",
+          "Fetching and handling API data with `fetch` or `Axios`.",
+          "Leveraging ES6+ features like destructuring, promises, and arrow functions.",
+          "Debugging and optimizing JavaScript code for performance.",
+        ],
       },
       {
         name: "React js",
-        para: "Lorem ipsum text  dummy",
+        para: "Skilled in building modular, scalable, and dynamic user interfaces.",
         logo: reactjs,
+        description: [
+          "Building reusable components and managing state effectively with `useState` and `useEffect`.",
+          "Implementing React Router for seamless navigation.",
+          "Leveraging props and context API for data management.",
+          "Integrating third-party libraries and plugins like Typewriter or AOS.",
+          "Using React developer tools for debugging and performance monitoring.",
+        ],
       },
       {
-        name: "Sketch",
-        para: "Lorem ipsum text  dummy",
-        logo: sketch,
+        name: "Tailwind CSS",
+        para: "Efficient in designing responsive and modern UIs with utility-first CSS.",
+        logo: tailwind,
+        description: [
+          "Designing responsive interfaces quickly with utility-first classes.",
+          "Customizing themes and extending styles with Tailwind configuration.",
+          "Implementing hover, focus, and active states for interactivity.",
+          "Ensuring consistency and minimal CSS bloat in projects.",
+          "Combining Tailwind with React or other libraries for modern UI designs.",
+        ],
       },
       {
-        name: "Python",
-        para: "Lorem ipsum text  dummy",
-        logo: python,
+        name: "Version Control (Git)",
+        para: "Experience in tracking changes and collaborating on code with Git/GitHub.",
+        logo: github,
+        description: [
+          "Managing project versions and collaborating using Git branches.",
+          "Handling pull requests and resolving merge conflicts on GitHub.",
+          "Writing clear and descriptive commit messages.",
+          "Rolling back to previous versions to fix bugs or errors.",
+          "Using `.gitignore` to manage sensitive files and keep repositories clean.",
+        ],
+      },
+      {
+        name: "Responsive Design",
+        para: "Ability to ensure websites are mobile-friendly and optimized for all screen sizes.",
+        logo: responsive,
+        description: [
+          "Building mobile-first layouts for optimized performance.",
+          "Testing designs across multiple devices and screen sizes.",
+          "Using relative units (%, em, rem) for fluid layouts.",
+          "Leveraging CSS tools like Flexbox and Grid for adaptive designs.",
+          "Ensuring cross-browser compatibility and accessibility.",
+        ],
       },
     ],
     icon: MdArrowForward,
   },
+  
   services: {
     title: "Services",
     subtitle: "WHAT I OFFER",
@@ -128,7 +168,7 @@ export const content = {
       {
         title: "PhotoShop Editing",
         para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo3,
+        logo: responsive,
       },
     ],
   },
